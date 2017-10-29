@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_below="@+id/checkBox"
+    tools:context="com.example.jose.id_24.MainActivity">
+
+    <Button
+        android:id="@+id/btnColores"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="Fondo Rojo" />
+
+    <Button
+        android:id="@+id/btnLetras"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/btnColores"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="17dp"
+        android:text="Letras Rojas" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/btnLetras"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="32dp"
+        android:text="Mostrar" />
+
+    <TextView
+        android:id="@+id/txtMostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox"
+        android:layout_alignBottom="@+id/checkBox"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="12dp"
+        android:layout_toRightOf="@+id/checkBox"
+        android:text="Este es el texto oculto"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/txtLongClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBox"
+        android:layout_below="@+id/checkBox"
+        android:layout_marginTop="68dp"
+        android:text="Haz aqui un clic largo aqui."
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/fondoColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignStart="@+id/txtLongClick"
+        android:layout_below="@+id/txtLongClick"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/background_light" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_alignTop="@+id/fondoColor"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="[0/5]"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
